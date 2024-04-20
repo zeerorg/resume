@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingNew}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://blog.zeerorg.site/}{\Large Rishabh Gupta}} & Email : \href{mailto:r.g.gupta@outlook.com}{r.g.gupta@outlook.com}\\
+  \href{https://blog.zeerorg.site/}{blog.zeerorg.site} & Mobile : \href{tel:+919711821354}{+91-9711821354} \\
+  \href{https://github.com/zeerorg}{github.com/zeerorg} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Delhi Technological University}{Delhi, India}
+      {Bachelors of Technology in Computer Engineering}{Jul. 2015 -- Jun. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Adobe}{Noida, India}
+      {Computer Scientist 1}{Feb 2023 - Present}
+      \resumeItemListStart
+        \resumeItem{Websocket as a service}
+          {Prototyped and led architecture discussions for websocket as a service for Adobe-wide backend teams. Owned load testing the service and providing over 50\% savings, along with identifying system bottlenecks.}
+        \resumeItem{Prometheus Adoption}
+          {Integrated prometheus metrics into our metric reporting infra bringing about cost savings and faster alerting.}
+      \resumeItemListEnd
+      
+    \resumeSubSubheading
+    {Member of Technical Staff 2}{Jul 2021 - Feb 2023}
+     \resumeItemListStart
+        \resumeItem{GC service}
+          {Designed and developed garbage collector service deleting 90\% of unused data providing \$10,000 in savings per year alongside bringing improvements to scale and resiliency across multiple services.}
+		\resumeItem{AWS SQS to Kafka Migration}
+          {Lead the efforts to ensure migration from Aws SQS based consumer to Kafka based message consumer happened with no data loss and zero disruption to millions of concurrently connected users receiving a million rpm updates.}
+     \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Microsoft}{Hyderabad, India}
+      {Software Engineer 2}{Mar 2021 - Jul 2021}
+      \resumeItemListStart
+        \resumeItem{Load testing}
+          {Architected and developed the first load testing approach for tasks backend to shed light on the bottlnecks and do root level analysis of service behaviour, finding limits of the architecture and underlying platform.}
+        
+      \resumeItemListEnd
+
+	  \resumeSubSubheading
+		{Software Engineer 1}{Jul 2019 - Feb 2021}
+		\resumeItemListStart
+			\resumeItem{To-Do backend}
+			{As one of the first developers of the Tasks India team I took the lead in collaborating with existing Germany based team, mastering a new codebase quickly to become a subject matter expert for the team.}
+			\resumeItem{To-Do categories}
+			{Directed porting of tasks categories to To-Do web removing a major blocker to adoption of the new Tasks experience in outlook web and outlook desktop partner apps, ultimately adding up over a million monthly active users.}
+		\resumeItemListEnd
+
+	  \resumeSubSubheading
+		{Software Engineer Intern}{Jun 2018 - Jul 2018}
+		\resumeItemListStart
+			\resumeItem{Office 365 Security}
+			{Implemented multi threaded map-reduce to optimize a milion RPM read events recording and achieving multi terabyte size reduction.}
+		\resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
