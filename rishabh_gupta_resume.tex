@@ -113,7 +113,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Delhi Technological University}{Delhi, India}
-      {Bachelors of Technology in Computer Engineering}{Jul. 2015 -- Jun. 2019}
+      {Bachelors of Technology in Computer Engineering; CGPA: 8.29}{Jul. 2015 -- Jun. 2019}
   \resumeSubHeadingListEnd
 
 
@@ -125,19 +125,21 @@
       {Adobe}{Noida, India}
       {Computer Scientist 1}{Feb 2023 - Present}
       \resumeItemListStart
-        \resumeItem{Websocket as a service}
-          {Prototyped and led architecture discussions for websocket as a service for Adobe-wide backend teams. Owned load testing the service and providing over 50\% savings, along with identifying system bottlenecks.}
-        \resumeItem{Prometheus Adoption}
-          {Integrated prometheus metrics into our metric reporting infra bringing about cost savings and faster alerting.}
+        \resumeItem{Websocket as a service implementation}
+          {Gained in-depth knowledge of the TCP, HTTP/2, and WebSocket protocol stack and led architecture discussions for websocket as a service for Adobe-wide backend teams. Championed use of Java Spring Webflux framework which led to CPU usage being reduced to half. Owned load testing for the service, achieving a 2x improvement in resource efficiency while pinpointing system bottlenecks.}
+        \resumeItem{Websocket as a service prototyping}
+          {Spearheaded websocket as a service prototyping, collaborating with diverse internal teams to grasp their backend integration needs. Communicated benefits of shared WebSocket connection to POCs. }
       \resumeItemListEnd
       
     \resumeSubSubheading
     {Member of Technical Staff 2}{Jul 2021 - Feb 2023}
-     \resumeItemListStart
+      \resumeItemListStart
         \resumeItem{GC service}
           {Designed and developed garbage collector service deleting 90\% of unused data providing \$10,000 in savings per year alongside bringing improvements to scale and resiliency across multiple services.}
-		\resumeItem{AWS SQS to Kafka Migration}
-          {Lead the efforts to ensure migration from Aws SQS based consumer to Kafka based message consumer happened with no data loss and zero disruption to millions of concurrently connected users receiving a million rpm updates.}
+		    \resumeItem{AWS SQS to Kafka Migration}
+          {Lead the efforts to develop a phased approach to ensure migration from Aws SQS based consumer to Kafka based message consumer happened with no data loss and zero disruption to millions of concurrently connected users receiving a million rpm updates.}
+        \resumeItem{Alerting and Resilience}
+          {Implemented Prometheus metrics integration within reporting infrastructure, resulting in cost reduction and expedited alerting mechanisms. Resolved Splunk bottleneck by architecting a custom pipeline to deliver precise calculations of monthly unique users for a high-concurrency service supporting 5 million users }
      \resumeItemListEnd
 
 
@@ -147,7 +149,7 @@
       \resumeItemListStart
         \resumeItem{Load testing}
           {Architected and developed the first load testing approach for tasks backend to shed light on the bottlnecks and do root level analysis of service behaviour, finding limits of the architecture and underlying platform.}
-        \resumeItem{Getting Started Lists APs}
+        \resumeItem{Getting Started Lists APIs}
           {Led the end-to-end development and implementation of the Getting Started Lists API, empowering clients to deliver a richer onboarding experience for new users, driving long-term engagement}
       \resumeItemListEnd
 
@@ -158,8 +160,8 @@
 			{As one of the first developers of the Tasks India team I took the lead in collaborating with existing Germany based team, mastering a new codebase quickly to become a subject matter expert for the team.}
 			\resumeItem{To-Do categories}
 			{Directed porting of tasks categories to To-Do web removing a major blocker to adoption of the new Tasks experience in outlook web and outlook desktop partner apps, ultimately adding up over a million monthly active users.}
-      \resumeItem{Working with legacy Exchange code}
-			{This independent initiative involved deciphering the existing codebase and implementing new, efficient APIs that fueled subsequent projects like the To-Do graph API and Outlook web panel. Additionally, I fostered knowledge transfer by conducting multiple code-sharing sessions.}
+      % \resumeItem{Working with legacy Exchange code}
+			% {This independent initiative involved deciphering the existing codebase and implementing new, efficient APIs that fueled subsequent projects like the To-Do graph API and Outlook web panel. Additionally, I fostered knowledge transfer by conducting multiple code-sharing sessions.}
 		\resumeItemListEnd
 
 	  \resumeSubSubheading
@@ -175,26 +177,22 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{QuantSoftware Toolkit}
-      {Open source python library for financial data analysis and machine learning for finance.}
-    \resumeSubItem{Github Visualization}
-      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
-    \resumeSubItem{Recommendation System}
-      {Music and Movie recommender systems using collaborative filtering on public datasets.}
-    \resumeSubItem{Mac Setup}
-      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+    \resumeSubItem{OpenFaaS - Cron Connector}
+      {Adds the ability to invoke functions based on cron expression on OpenFaas deployment}
+    \resumeSubItem{k3s in docker (k3d)}
+      {A tool for helping developers working with kubernetes use a lightweight development environment}
   \resumeSubHeadingListEnd
 
 %
 %--------PROGRAMMING SKILLS------------
-%\section{Programming Skills}
-%  \resumeSubHeadingListStart
-%    \item{
-%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
-%      \hfill
-%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
-%    }
-%  \resumeSubHeadingListEnd
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Technologies}{: AWS, Azure, Kafka, Dynamodb, Docker, Kubernetes, Redis, Spring Webflux}
+      \hfill
+      \textbf{Languages}{: Java, C\#, JavaScript, Golang}
+    }
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
